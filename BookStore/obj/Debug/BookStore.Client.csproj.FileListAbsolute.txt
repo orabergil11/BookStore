@@ -1,0 +1,227 @@
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe.config
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\CommonServiceLocator.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddBookView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddJournalView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductButtonView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\GoBack.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\ProductMenuView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\StartView.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\App.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.lref
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\App.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddBookView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddJournalView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductButtonView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\GoBack.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\ProductMenuView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\StartView.baml
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.g.resources
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Properties.Resources.resources
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.GenerateResource.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CopyComplete
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.exe
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\CommonServiceLocator.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddBookView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddJournalView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductButtonView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\GoBack.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\ProductMenuView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\StartView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\App.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.lref
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\App.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddBookView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddJournalView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductButtonView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\AddProductView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\GoBack.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\ProductMenuView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\StartView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.g.resources
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Properties.Resources.resources
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.GenerateResource.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CopyComplete
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.exe
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.exe
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\CommonServiceLocator.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\App.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.lref
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\App.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\MainWindow.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.g.resources
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Properties.Resources.resources
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.GenerateResource.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CopyComplete
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.exe
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\HomeView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\HomeView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddJournalView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddBookView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddJournalView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerViews\ProductMenuView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddBookView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerViews\ProductMenuView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CartView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CartView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\EntityFramework.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Models.dll.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.Server.dll.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\EntityFramework.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.DataBase.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.DataBase.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\bin\Debug\BookStore.DataBase.dll.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeLoginView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeLoginView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\ReplenishmentView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\EmployeeViews\ReplenishmentView.baml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerViews\ThankYouView.g.cs
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore\obj\Debug\Views\CustomerViews\ThankYouView.baml
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.exe.config
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.exe
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.DataBase.dll
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Models.dll
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Server.dll
+C:\Projects\BookStore\BookStore\bin\Debug\CommonServiceLocator.dll
+C:\Projects\BookStore\BookStore\bin\Debug\EntityFramework.dll
+C:\Projects\BookStore\BookStore\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Projects\BookStore\BookStore\bin\Debug\System.Windows.Interactivity.dll
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.DataBase.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.DataBase.dll.config
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Models.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Models.dll.config
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Server.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\BookStore.Server.dll.config
+C:\Projects\BookStore\BookStore\bin\Debug\EntityFramework.xml
+C:\Projects\BookStore\BookStore\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Projects\BookStore\BookStore\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.AssemblyReference.cache
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.SuggestedBindingRedirects.cache
+C:\Projects\BookStore\BookStore\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddJournalView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\MainWindow.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CartView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CustomerViews\ThankYouView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddBookView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddJournalView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeLoginView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\HomeView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CustomerViews\ProductMenuView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\ReplenishmentView.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\App.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.cache
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore_MarkupCompile.lref
+C:\Projects\BookStore\BookStore\obj\Debug\App.baml
+C:\Projects\BookStore\BookStore\obj\Debug\MainWindow.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CartView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CustomerViews\ThankYouView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\AddBookView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeLoginView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\EmployeeView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\HomeView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\CustomerViews\ProductMenuView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\Views\EmployeeViews\ReplenishmentView.baml
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.g.resources
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Properties.Resources.resources
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.GenerateResource.cache
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CoreCompileInputs.cache
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.Client.csproj.CopyComplete
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.exe
+C:\Projects\BookStore\BookStore\obj\Debug\BookStore.pdb

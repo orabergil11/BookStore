@@ -1,0 +1,24 @@
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CopyComplete

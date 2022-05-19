@@ -1,0 +1,12 @@
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\BookStore.UnitTest.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\BookStore.UnitTest.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\obj\Debug\BookStore.UnitTest.csproj.AssemblyReference.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\obj\Debug\BookStore.UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\obj\Debug\BookStore.UnitTest.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\obj\Debug\BookStore.UnitTest.pdb
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\BookStore.UnitTest.dll.config
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\EntityFramework.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\EntityFramework.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.UnitTest\obj\Debug\BookStore.UnitTest.csproj.CopyComplete

@@ -1,0 +1,60 @@
+﻿<Window x:Class="BookStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookStore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="920"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        >
+    
+    <Border Background="#272537"
+            CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Or's Books Store"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <Button Content="Home"
+                        Style="{StaticResource MenuButtonTheme}"
+                        Command="{Binding HomeCommand}"/>
+                
+                <Button Content="Customer"
+                        Style="{StaticResource MenuButtonTheme}"
+                        Command="{Binding CustomerCommand}"/>
+
+                <Button Content="Employee"
+                        Style="{StaticResource MenuButtonTheme}"
+                        Command="{Binding EmployeeCommand}"/>
+
+                <Button Content="Cart"
+                        Style="{StaticResource MenuButtonTheme}"
+                        Command="{Binding CartCommand}"/>
+            </StackPanel>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding MyUserControl}"/>
+        </Grid>
+    </Border>
+</Window>
