@@ -14,11 +14,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <StackPanel>
 
             <Button Content="Add Product" Command="{Binding AddBookMenu}">
             </Button>
-        </StackPanel>
 
     </Grid>
 </UserControl>
