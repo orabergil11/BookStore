@@ -22,7 +22,7 @@ namespace BookStore.DataBase
 
         public bool Delete(Guid id)
         {
-            var prodToRemove = Data._Products.SingleOrDefault(s => s.Id == id);
+            var prodToRemove = Data._Products.FirstOrDefault(s => s.Id == id);
             if (prodToRemove.Id != Guid.Empty)
             {
                 Data._Products.Remove(prodToRemove);
