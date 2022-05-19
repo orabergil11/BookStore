@@ -22,3 +22,15 @@ C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFi
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.xml
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CopyComplete
+C:\Projects\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll.config
+C:\Projects\BookStore\BookStore.Models\bin\Debug\BookStore.Models.dll
+C:\Projects\BookStore\BookStore.Models\bin\Debug\BookStore.Models.pdb
+C:\Projects\BookStore\BookStore.Models\bin\Debug\EntityFramework.dll
+C:\Projects\BookStore\BookStore.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\BookStore\BookStore.Models\bin\Debug\EntityFramework.xml
+C:\Projects\BookStore\BookStore.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.AssemblyReference.cache
+C:\Projects\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CoreCompileInputs.cache
+C:\Projects\BookStore\BookStore.Models\obj\Debug\BookStore.Models.csproj.CopyComplete
+C:\Projects\BookStore\BookStore.Models\obj\Debug\BookStore.Models.dll
+C:\Projects\BookStore\BookStore.Models\obj\Debug\BookStore.Models.pdb
