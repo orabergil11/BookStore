@@ -122,7 +122,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" >
                     <TextBlock Text="Quantity: "    FontSize="16"     Foreground="White"/>
-                    <TextBlock Text="{Binding Quantity}" FontSize="16" Foreground="White"/>
+                    <TextBlock Text="{Binding TotalQuantityInStock}" FontSize="16" Foreground="White"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" >
                     <TextBlock Text="PublicationDate: " FontSize="16"         Foreground="White"/>
@@ -135,10 +135,10 @@
 
         <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" >
             <TextBlock Text="How Many Products?" FontSize="16" Foreground="White"/>
-            <TextBox Text="{Binding AmountOfProducts, Mode=TwoWay}"/>
+            <TextBox Text="{Binding RequestedProductsToBuy, Mode=TwoWay}"/>
             <Button Content="Add To Cart" Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" Command="{Binding CartCommand}"/>
-            <TextBlock  Text="Added Successfully!" Foreground="LightGreen" FontWeight="Bold"  Visibility="{Binding AddedToCartNotefication}" />
-            <TextBlock  Text="Input Not Valid!!" Foreground="Red" FontWeight="Bold"  Visibility="{Binding NotAddedToCartNotefication}" />
+            <TextBlock  Text="Added Successfully!" Foreground="LightGreen" FontWeight="Bold"  Visibility="{Binding AddedToCart_Notification}" />
+            <TextBlock  Text="Input Not Valid!!" Foreground="Red" FontWeight="Bold"  Visibility="{Binding NotAddedToCart_Notification}" />
         </StackPanel>
     </Grid>
 </UserControl>

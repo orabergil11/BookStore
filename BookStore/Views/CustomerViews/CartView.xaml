@@ -46,7 +46,7 @@
             </StackPanel>
         </StackPanel>
 
-        <Button Content="Buy" Height="50" Width="100" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Command="{Binding BuyProductCommand}"/>
+        <Button Content="Buy" Height="50" Width="100" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" Command="{Binding BuyProduct_Command}"/>
 
     </Grid>
 </UserControl>
