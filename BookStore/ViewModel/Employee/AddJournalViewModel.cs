@@ -1,10 +1,13 @@
 ﻿using BookStore.Models.Enums;
 using BookStore.Server;
+using BookStore.Views.EmployeeViews;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace BookStore.ViewModel
 {
@@ -19,6 +22,7 @@ namespace BookStore.ViewModel
         private JournalFrequency selectedJournalFreq;
         private JournalGenre selectedJournalGenre;
 
+        
         public string EditorName                    { get => editorName; set => Set(ref editorName, value); }
         public string Title                         { get => title; set => Set(ref title, value); }
         public int Quantity                         { get => quantity; set => Set(ref quantity, value); }
@@ -36,11 +40,34 @@ namespace BookStore.ViewModel
             AddProductCommand = new RelayCommand(AddJournalToDb);
             JournalFrequencies = new ObservableCollection<JournalFrequency>(Enum.GetValues(typeof(JournalFrequency)).Cast<JournalFrequency>());
             JournalGenres = new ObservableCollection<JournalGenre>(Enum.GetValues(typeof(JournalGenre)).Cast<JournalGenre>());
+            MessengerInstance.Register<bool>(this, "resetFields", resetFields);
+            DateTimeSelection = DateTime.Now;
         }
 
         private void AddJournalToDb()
         {
-            ProductService.Instance.AddJournal(EditorName, Title, IssueNumber, Quantity, DateTimeSelection, Price, SelectedJournalFreq, SelectedJournalGenre);
+            if (false == ProductService.Instance.AddJournal(EditorName, Title, IssueNumber, Quantity, DateTimeSelection, Price, SelectedJournalFreq, SelectedJournalGenre))
+            {
+                MessageBox.Show("Please Enter Valid Details!");
+                return;
+            }
+            
+            else
+            {
+                MessengerInstance.Send<bool>(true, "resetFields");
+                MessengerInstance.Send<UserControl>(new Addedsuccessfully());
+            }
+        }
+        private void resetFields(bool obj)
+        {
+            EditorName = default;
+            Title = default;
+            Quantity = default;
+            IssueNumber = default;
+            Price = default;
+            DateTimeSelection = default;
+            SelectedJournalFreq = default;
+            SelectedJournalGenre = default;
         }
     }
 }

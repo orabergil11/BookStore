@@ -5,6 +5,7 @@ namespace BookStore.Models
 {
     public class ShoppingCart
     {
+        #region prop
         public static ShoppingCart Instance
         {
             get
@@ -18,12 +19,13 @@ namespace BookStore.Models
         }
         public List<Product> ProductsInCart { get; set; }
         private static ShoppingCart instance = null;
+        #endregion
+        
+        #region ctor
+        private ShoppingCart() => ProductsInCart = new List<Product>();
+        #endregion
 
-        private ShoppingCart()
-        {
-            ProductsInCart = new List<Product>();
-        }
-
+        #region methods
         public double GetCartValue()
         {
             double totalValue = 0;
@@ -34,9 +36,7 @@ namespace BookStore.Models
             return totalValue;
         }
 
-        public void RemoveProductFromCart(Product productToRemove)
-        {
-            ProductsInCart.Remove(productToRemove);
-        }
+        public void RemoveProductFromCart(Product productToRemove) => ProductsInCart.Remove(productToRemove);
+        #endregion
     }
 }

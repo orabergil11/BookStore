@@ -27,15 +27,20 @@ namespace BookStore.ViewModel
         private void GoToCartPage()
         {
             MessengerInstance.Send<UserControl>(new CartView());
-            MessengerInstance.Send<bool>(true,"cart");
+            MessengerInstance.Send<bool>(true,"RefreshCartView");
         }
         private void GoToCustomerPage()
         {
             MessengerInstance.Send<UserControl>(new ProductMenuView());
-            MessengerInstance.Send<bool>(true, "custView");
+            MessengerInstance.Send<bool>(true, "RefreshProductMenuView");
         }
 
-        private void GoToEmployeePage() => MessengerInstance.Send<UserControl>(new EmployeeView());
+        private void GoToEmployeePage()
+        {
+            MessengerInstance.Send<UserControl>(new EmployeeView());
+            MessengerInstance.Send<bool>(true, "RefreshEmployeeView");
+        }
+
         private void GoToHomePage() => MessengerInstance.Send<UserControl>(new HomeView());
     }
 }

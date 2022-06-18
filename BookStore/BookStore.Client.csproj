@@ -81,11 +81,12 @@
     <Compile Include="ViewModel\Employee\AddBookViewModel.cs" />
     <Compile Include="ViewModel\Employee\AddJournalViewModel.cs" />
     <Compile Include="ViewModel\Employee\EmployeeViewModel.cs" />
+    <Compile Include="ViewModel\Employee\RemoveProductsViewModel.cs" />
     <Compile Include="ViewModel\Home\MainViewModel.cs" />
     <Compile Include="ViewModel\Customer\ProductMenuViewModel.cs" />
     <Compile Include="ViewModel\Employee\ReplenishmentViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
-    <Compile Include="Views\CartView.xaml.cs">
+    <Compile Include="Views\CustomerViews\CartView.xaml.cs">
       <DependentUpon>CartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomerViews\ThankYouView.xaml.cs">
@@ -94,16 +95,19 @@
     <Compile Include="Views\EmployeeViews\AddBookView.xaml.cs">
       <DependentUpon>AddBookView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\EmployeeViews\AddedSuccessfully.xaml.cs">
+      <DependentUpon>AddedSuccessfully.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EmployeeViews\AddJournalView.xaml.cs">
       <DependentUpon>AddJournalView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EmployeeViews\EmployeeLoginView.xaml.cs">
-      <DependentUpon>EmployeeLoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\EmployeeViews\EmployeeView.xaml.cs">
       <DependentUpon>EmployeeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\HomeView.xaml.cs">
+    <Compile Include="Views\EmployeeViews\RemoveProductsView.xaml.cs">
+      <DependentUpon>RemoveProductsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeViews\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CustomerViews\ProductMenuView.xaml.cs">
@@ -128,7 +132,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\CartView.xaml">
+    <Page Include="Views\CustomerViews\CartView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,11 +144,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\EmployeeViews\AddJournalView.xaml">
+    <Page Include="Views\EmployeeViews\AddedSuccessfully.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\EmployeeViews\EmployeeLoginView.xaml">
+    <Page Include="Views\EmployeeViews\AddJournalView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,7 +156,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\HomeView.xaml">
+    <Page Include="Views\EmployeeViews\RemoveProductsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomeViews\HomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

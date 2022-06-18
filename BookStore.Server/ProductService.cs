@@ -2,8 +2,6 @@
 using BookStore.Models;
 using BookStore.Models.Enums;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace BookStore.Server
 {
@@ -49,42 +47,47 @@ namespace BookStore.Server
             {
                 Products.Data._Products.AddRange(products);
             }
-        }//setting default products for testing
+        } //setting default products for testing
 
         public bool AddProductsToCart(Product selectedProduct, int numOfProductsToBuy)
         {
             var productsInCart = ShoppingCart.Instance.ProductsInCart;
 
+            // check if input valid
             if (selectedProduct == null) return false;
             if (selectedProduct.Quantity < numOfProductsToBuy || numOfProductsToBuy <= 0)
                 return false;
+
+            // if product exist
+            bool isProductInCart = false;
+            Product productInCart = default; 
 
             foreach (var product in productsInCart)
             {
                 if (product.Id == selectedProduct.Id)
                 {
-                    product.Quantity += numOfProductsToBuy;
-                    return true;
-                } 
+                    isProductInCart = true;
+                    productInCart = product;
+                }
             }
 
-            for (int i = 0; i < productsInCart.Count; i++)
+            if (isProductInCart)
             {
-                if (productsInCart[i].Quantity + numOfProductsToBuy > selectedProduct.Quantity)
+                if (productInCart.Quantity + numOfProductsToBuy > selectedProduct.Quantity)
+                {
                     return false;
+                }
+                productInCart.Quantity += numOfProductsToBuy;
             }
-
-            for (int i = 0; i < productsInCart.Count; i++)
+            else
             {
-                if (productsInCart[i].Id == selectedProduct.Id)
-                    productsInCart[i].Quantity += numOfProductsToBuy;
+                Product newProductInCart = (Product)selectedProduct.Clone();
+                newProductInCart.Quantity = numOfProductsToBuy;
+                productsInCart.Add(newProductInCart);
             }
-
-            Product newProductInCart = (Product)selectedProduct.Clone();
-            newProductInCart.Quantity = numOfProductsToBuy;
-            productsInCart.Add(newProductInCart);
             return true;
         }
+
         public void BuyProduct()
         {
             var shoppingCart = ShoppingCart.Instance.ProductsInCart;
@@ -108,16 +111,67 @@ namespace BookStore.Server
                 }
             }
         }
-        public void AddBook(string autoherName, string title, int quantity, DateTime publicationDate, decimal basePrice, BookGenre bookGenre, int eddition)
+
+        public bool AddBook(string autoherName, string title, int quantity, DateTime publicationDate, decimal basePrice, BookGenre bookGenre, int eddition)
         {
-            var book = new Book(autoherName, title, quantity, publicationDate, basePrice, bookGenre, eddition);
-            Products.Add(book);
+            // details validation
+            if (ProductAlreadyExists(title))
+            {
+                UpdateQuantityForExistingProduct(title, quantity);
+                return true;
+            }
+
+            if (AreValuesValid(title, autoherName, quantity, basePrice, eddition))
+            {
+                var book = new Book(autoherName, title, quantity, publicationDate, basePrice, bookGenre, eddition);
+                Products.Add(book);
+                return true;
+            }
+            else return false;
         }
-        public void AddJournal(string editorName, string name, int issueNumber, int quantuty, DateTime publicationDate,
+
+        public bool AddJournal(string editorName, string title, int issueNumber, int quantity, DateTime publicationDate,
             decimal basePrice, JournalFrequency frequency, JournalGenre genres)
         {
-            var journal = new Journal(editorName, name, issueNumber, quantuty, publicationDate, basePrice, frequency, genres);
-            Products.Add(journal);
+            // details validation
+            if (ProductAlreadyExists(title))
+            {
+                UpdateQuantityForExistingProduct(title, quantity);
+                return true;
+            }
+
+            if (AreValuesValid(title, editorName, quantity, basePrice, issueNumber))
+            {
+                var journal = new Journal(editorName, title, issueNumber, quantity, publicationDate, basePrice, frequency, genres);
+                Products.Add(journal);
+                return true;
+            }
+            else return false;
+
+        }
+
+        private bool AreValuesValid(string title, string editorOrAuthor, int quantity, decimal basePrice, int issueOrEddition)
+        {
+            if (quantity <= 0) return false;
+            if (basePrice <= 0) return false;
+            if (issueOrEddition <= 0) return false;
+            if (title == default) return false;
+            if (editorOrAuthor == default) return false;
+            if (editorOrAuthor.Length == 0) return false;
+            else return true;
+        }
+
+        private void UpdateQuantityForExistingProduct(string title, int quantity)
+        {
+            var productInStock = Products.Get(title);
+            var UpdatedQuantity = productInStock.Quantity + quantity;
+            Products.Update(productInStock, UpdatedQuantity);
+        }
+
+        private bool ProductAlreadyExists(string title)
+        {
+            if (Products.Get(title) == null) return false;
+            else return true;
         }
     }
 }

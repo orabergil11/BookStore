@@ -1,7 +1,6 @@
 ﻿using BookStore.Models.Enums;
 using GalaSoft.MvvmLight;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Remoting;
@@ -12,7 +11,6 @@ namespace BookStore.ViewModel
     public class ReplenishmentViewModel : ViewModelBase
     {
         public ObservableCollection<ProductTypes> ItemsToAdd { get; set; }
-
         private ProductTypes selectedProduct;
 
         public ProductTypes SelectedProduct
@@ -33,8 +31,8 @@ namespace BookStore.ViewModel
         public void ShowRelevantView()
         {
             ObjectHandle handle = Activator.CreateInstance(null, "BookStore.Views.Add" + SelectedProduct.ToString() + "View");
-            object O = handle.Unwrap();
-            MessengerInstance.Send<UserControl>((UserControl)O);
+            object RelevantPage = handle.Unwrap();
+            MessengerInstance.Send<UserControl>((UserControl)RelevantPage);
         }
     }
 }

@@ -45,7 +45,7 @@ namespace BookStore.ViewModel.CustomerVM
         {
             currentProductsInCart = new ObservableCollection<Product>(ShoppingCart.Instance.ProductsInCart);
             BuyProductCommand = new RelayCommand(BuyProduct);
-            MessengerInstance.Register<bool>(this,"cart", InitCart);
+            MessengerInstance.Register<bool>(this, "RefreshCartView", RefreshCartDisplay);
             MessengerInstance.Register<bool>(this, "resetCart", resetCart);
         }
 
@@ -57,7 +57,7 @@ namespace BookStore.ViewModel.CustomerVM
             SelectedProductQuantity = 0;
             TotalCartValue = 0;
         }
-        private void InitCart(bool obj)
+        private void RefreshCartDisplay(bool obj)
         {
             CurrentProductsInCart = new ObservableCollection<Product>(ShoppingCart.Instance.ProductsInCart);
             UpdateProductDetails();

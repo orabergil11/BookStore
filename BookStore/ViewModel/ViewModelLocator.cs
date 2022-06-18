@@ -13,6 +13,7 @@
 */
 
 using BookStore.ViewModel.CustomerVM;
+using BookStore.ViewModel.Employee;
 using CommonServiceLocator;
 using GalaSoft.MvvmLight.Ioc;
 
@@ -31,6 +32,7 @@ namespace BookStore.ViewModel
             SimpleIoc.Default.Register<AddBookViewModel>();
             SimpleIoc.Default.Register<AddJournalViewModel>();
             SimpleIoc.Default.Register<CartViewModel>();
+            SimpleIoc.Default.Register<RemoveProductsViewModel>();
 
         }
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
@@ -40,5 +42,6 @@ namespace BookStore.ViewModel
         public AddBookViewModel AddBook => ServiceLocator.Current.GetInstance<AddBookViewModel>();
         public AddJournalViewModel AddJournal => ServiceLocator.Current.GetInstance<AddJournalViewModel>();
         public CartViewModel Cart => ServiceLocator.Current.GetInstance<CartViewModel>();
+        public RemoveProductsViewModel RemoveProducts => ServiceLocator.Current.GetInstance<RemoveProductsViewModel>();
     }
 }

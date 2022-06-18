@@ -16,7 +16,7 @@ namespace BookStore.ViewModel
     {
         private string description;
         private string authorOrEditor;
-        private string productDetails;
+
         private int editionOrIssueNumber;
         private int quantity;
         private int amountOfProducts;
@@ -34,7 +34,7 @@ namespace BookStore.ViewModel
         private ObservableCollection<ProductTypes> productsType;
         private ObservableCollection<Product> showList;
         private DispatcherTimer dispatcherTimer;
-        private bool isSuccussfullyAdded;
+        private bool isSuccessfullyAdded;
 
 
 
@@ -46,7 +46,6 @@ namespace BookStore.ViewModel
         #endregion
 
         #region FullProperties
-        public string ProductDetails { get => productDetails; set => Set(ref productDetails, value); }
         public string Description { get => description; set => Set(ref description, value); }
         public decimal Price { get => price; set => Set(ref price, value); }
         public string AuthorOrEditor { get => authorOrEditor; set => Set(ref authorOrEditor, value); }
@@ -68,7 +67,6 @@ namespace BookStore.ViewModel
                 Set(ref selectedType, value);
                 //clean the cb
                 ProductGenre.Clear();
-
                 FillProductsInComboBox(true);
             }
         }
@@ -79,7 +77,7 @@ namespace BookStore.ViewModel
             {
                 Set(ref selectedGenre, value);
                 FillProductsInComboBox(false);
-                ShowRelevantGenres();
+                ShowSelectedProductType();
             }
         }
         public Product SelectedProduct
@@ -87,7 +85,7 @@ namespace BookStore.ViewModel
             get => selectedProduct; set
             {
                 Set(ref selectedProduct, value);
-                UpdateProductDetails();
+                UpdateProductDetailsOnDisplay();
             }
         }
         #endregion
@@ -98,21 +96,46 @@ namespace BookStore.ViewModel
             InitObservableCollections();
             InitVisibillities();
             this.CartCommand = new RelayCommand(AddProductToCart);
-            MessengerInstance.Register<bool>(this, "custView", UpdateTheProductsList);
+            MessengerInstance.Register<bool>(this, "RefreshProductMenuView", ResetProductMenuDisplay);
             dispatcherTimer = new DispatcherTimer();
         }
+        #region methods
+        private void ResetProductMenuDisplay(bool obj)
+        {
+            SelectedType = default;
+            SetProductsViewsOff();
+            this.productDb = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
+            AddRelevantProducts();
+        }
+        private void InitObservableCollections()
+        {
+            this.ProductsType = new ObservableCollection<ProductTypes>(Enum.GetValues(typeof(ProductTypes)).Cast<ProductTypes>());
+            this.ProductGenre = new ObservableCollection<dynamic>();
+            this.ProductDb = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
+            this.ShowList = ProductDb;
+        }
+
+        private void InitVisibillities()
+        {
+            SetProductsViewsOff();
+            SetNoteficationsOff();
+        }
+        private void SetNoteficationsOff()
+        {
+            this.AddedToCartNotefication = Visibility.Collapsed;
+            this.NotAddedToCartNotefication = Visibility.Collapsed;
+        }
+
         private void InitTimer()
         {
-
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 3);
             dispatcherTimer.Start();
-
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-            if (isSuccussfullyAdded)
+            if (isSuccessfullyAdded)
             {
                 this.AddedToCartNotefication = Visibility.Collapsed;
                 dispatcherTimer.Stop();
@@ -124,32 +147,16 @@ namespace BookStore.ViewModel
         }
         #endregion
 
-        private void InitVisibillities()
+        private void SetProductsViewsOff()
         {
             this.BookVisibility = Visibility.Collapsed;
             this.JournalVisibility = Visibility.Collapsed;
-            this.AddedToCartNotefication = Visibility.Collapsed;
-            NotAddedToCartNotefication = Visibility.Collapsed;
-        }
-
-        private void InitObservableCollections()
-        {
-            this.ProductsType = new ObservableCollection<ProductTypes>(Enum.GetValues(typeof(ProductTypes)).Cast<ProductTypes>());
-            this.ProductGenre = new ObservableCollection<dynamic>();
-            this.ProductDb = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
-            this.ShowList = ProductDb;
-        }
-
-        private void UpdateTheProductsList(bool obj)
-        {
-            this.productDb = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
-            UpdateProductDetails();
         }
 
         private void AddProductToCart()
         {
-            isSuccussfullyAdded = ProductService.Instance.AddProductsToCart(SelectedProduct, AmountOfProducts);
-            if (isSuccussfullyAdded)
+            isSuccessfullyAdded = ProductService.Instance.AddProductsToCart(SelectedProduct, AmountOfProducts);
+            if (isSuccessfullyAdded)
             {
                 AmountOfProducts = 0;
                 AddedToCartNotefication = Visibility.Visible;
@@ -162,7 +169,7 @@ namespace BookStore.ViewModel
             }
         }
 
-        private void UpdateProductDetails()
+        private void UpdateProductDetailsOnDisplay()
         {
             if (SelectedProduct == null) return;
             if (SelectedProduct.GetType() == typeof(Book))
@@ -196,6 +203,7 @@ namespace BookStore.ViewModel
                 JournalVisibility = Visibility.Visible;
             }
         }
+
         private void FillProductsInComboBox(bool ifGenresNeedToBeAdded)
         {
             if (selectedType == ProductTypes.Book)
@@ -236,27 +244,9 @@ namespace BookStore.ViewModel
                 }
             }
 
-            //else if (selectedType == ProductTypes.All)
-            //{
-            //    if (ifGenresNeedToBeAdded == true)
-            //    {
-            //        foreach (var item in Enum.GetValues(typeof(Product)))
-            //        {
-            //            this.ProductGenre.Add(item);
-            //        }
-            //    }
-            //    ShowList.Clear();
-            //    foreach (var product in ProductDb)
-            //    {
-            //        if (product.GetType() == typeof(Product))
-            //        {
-            //            ShowList.Add(product);
-            //        }
-            //    }
-            //}
         }
-        
-        private void ShowRelevantGenres()
+
+        private void ShowSelectedProductType()
         {
             if (SelectedType == ProductTypes.Book)
             {
@@ -276,10 +266,10 @@ namespace BookStore.ViewModel
             {
                 for (int i = 0; i < ShowList.Count; i++)
                 {
-                    Journal b = (Journal)ShowList[i];
+                    Journal j = (Journal)ShowList[i];
 
                     if (SelectedGenre == null) return;
-                    if (b.JournalGenre == ((JournalGenre)SelectedGenre) == false)
+                    if (j.JournalGenre == ((JournalGenre)SelectedGenre) == false)
                     {
                         ShowList.RemoveAt(i);
                         i--;
@@ -288,5 +278,14 @@ namespace BookStore.ViewModel
             }
         }
 
+        private void AddRelevantProducts()
+        {
+            ShowList.Clear();
+            foreach (var product in ProductDb)
+            {
+                ShowList.Add(product);
+            }
+        }
     }
 }
+        #endregion

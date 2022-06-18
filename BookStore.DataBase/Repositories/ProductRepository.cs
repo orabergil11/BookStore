@@ -23,6 +23,7 @@ namespace BookStore.DataBase
         public bool Delete(Guid id)
         {
             var prodToRemove = Data._Products.FirstOrDefault(s => s.Id == id);
+            if (prodToRemove == null) return false;
             if (prodToRemove.Id != Guid.Empty)
             {
                 Data._Products.Remove(prodToRemove);
@@ -52,9 +53,14 @@ namespace BookStore.DataBase
 
         public Product Get(Guid id)
         {
-            var selectedProduct = Data._Products.Where(product => product.Id == id);
+            var selectedProduct = Data._Products.FirstOrDefault(product => product.Id == id);
+            return selectedProduct;
+        }
 
-            return (Product)selectedProduct;
+        public Product Get(string title)
+        {
+            var selectedProduct = Data._Products.FirstOrDefault((product => product.Description == title));
+            return selectedProduct;
         }
     }
 }
