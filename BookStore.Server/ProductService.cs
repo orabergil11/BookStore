@@ -1,9 +1,16 @@
-﻿using BookStore.DataBase;
-using BookStore.Models;
+﻿// ------------------------------------------------------------------------------------------------------ //
+//                                                                                                        //
+// @File      ProductService.cs                                                                           //
+// @Details   Responsible to be the "logical" layer between the  server side and client side              //
+// @Author    Or Abergil                                                                                  //
+// @Since     15/03/2022                                                                                  //
+//                                                                                                        //
+// ------------------------------------------------------------------------------------------------------ //
+
 using BookStore.Models.Enums;
+using BookStore.DataBase;
+using BookStore.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace BookStore.Server
 {
@@ -11,6 +18,7 @@ namespace BookStore.Server
     {
         public static ProductService Instance
         {
+            // 'singelton' pattern  
             get
             {
                 if (instance == null)
@@ -34,57 +42,62 @@ namespace BookStore.Server
         {
             var products = new Product[]
             {
-                new Book ("JK.Rollin", "Hary Potter Philosopher's Stone", 10, DateTime.Now, 30,BookGenre.Action,1 ),
-                new Book ("JK.Rollin", "Hary Potter Chamber of Secrets", 10, DateTime.Now, 30,BookGenre.Action,2 ),
-                new Book ("JK.Rollin", "Hary Potter Prisoner of Azkaban", 10, DateTime.Now, 30,BookGenre.Action,3 ),
-                new Book ("JK.Rollin", "Hary Potter Goblet of Fire", 10, DateTime.Now, 30,BookGenre.Action,3 ),
-                new Book ("JK.Rollin", "Hary Potter Order of the Phoenix", 10, DateTime.Now, 30,BookGenre.Action,3 ),
-                new Book ("JK.Rollin", "Hary Potter Deathly Hallows ", 10, DateTime.Now, 30,BookGenre.Action,3 ),
-                new Journal ("Amos Shoken", "Haaretz", 1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
-                new Journal ("Aviv Shalom", "Yedioth_Aharonot", 1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
-                new Journal ("George Nap ", "National Geographic", 1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
-                new Journal ("Robert Falcon Scott", "Captain Scott's Last Expedition", 1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Nature)
+                new Book ("JK.Rollin",      "Hary Potter Philosopher's Stone",   10, DateTime.Now, 30,BookGenre.Action,1 ),
+                new Book ("JK.Rollin",      "Hary Potter Chamber of Secrets",    10, DateTime.Now, 30,BookGenre.Action,2 ),
+                new Book ("JK.Rollin",      "Hary Potter Prisoner of Azkaban",   10, DateTime.Now, 30,BookGenre.Action,3 ),
+                new Book ("JK.Rollin",      "Hary Potter Goblet of Fire",        10, DateTime.Now, 30,BookGenre.Action,3 ),
+                new Book ("JK.Rollin",      "Hary Potter Order of the Phoenix",  10, DateTime.Now, 30,BookGenre.Action,3 ),
+                new Book ("JK.Rollin",      "Hary Potter Deathly Hallows ",      10, DateTime.Now, 30,BookGenre.Action,3 ),
+                new Journal ("Amos Shoken", "Haaretz",                                1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
+                new Journal ("Aviv Shalom", "Yedioth_Aharonot",                       1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
+                new Journal ("George Nap ", "National Geographic",                    1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Law),
+                new Journal ("Robert Falcon Scott", "Captain Scott's Last Expedition",1, 10, DateTime.Now, 50, JournalFrequency.Annually, JournalGenre.Nature)
             };
             using (Products.Data)
             {
                 Products.Data._Products.AddRange(products);
             }
-        }//setting default products for testing
+        } //setting default products for testing
 
         public bool AddProductsToCart(Product selectedProduct, int numOfProductsToBuy)
         {
             var productsInCart = ShoppingCart.Instance.ProductsInCart;
 
+            // check if input valid
             if (selectedProduct == null) return false;
             if (selectedProduct.Quantity < numOfProductsToBuy || numOfProductsToBuy <= 0)
                 return false;
+
+            // if product exist
+            bool isProductInCart = false;
+            Product productInCart = default; 
 
             foreach (var product in productsInCart)
             {
                 if (product.Id == selectedProduct.Id)
                 {
-                    product.Quantity += numOfProductsToBuy;
-                    return true;
-                } 
+                    isProductInCart = true;
+                    productInCart = product;
+                }
             }
 
-            for (int i = 0; i < productsInCart.Count; i++)
+            if (isProductInCart)
             {
-                if (productsInCart[i].Quantity + numOfProductsToBuy > selectedProduct.Quantity)
+                if (productInCart.Quantity + numOfProductsToBuy > selectedProduct.Quantity)
+                {
                     return false;
+                }
+                productInCart.Quantity += numOfProductsToBuy;
             }
-
-            for (int i = 0; i < productsInCart.Count; i++)
+            else
             {
-                if (productsInCart[i].Id == selectedProduct.Id)
-                    productsInCart[i].Quantity += numOfProductsToBuy;
+                Product newProductInCart = (Product)selectedProduct.Clone();
+                newProductInCart.Quantity = numOfProductsToBuy;
+                productsInCart.Add(newProductInCart);
             }
-
-            Product newProductInCart = (Product)selectedProduct.Clone();
-            newProductInCart.Quantity = numOfProductsToBuy;
-            productsInCart.Add(newProductInCart);
             return true;
         }
+
         public void BuyProduct()
         {
             var shoppingCart = ShoppingCart.Instance.ProductsInCart;
@@ -108,16 +121,51 @@ namespace BookStore.Server
                 }
             }
         }
-        public void AddBook(string autoherName, string title, int quantity, DateTime publicationDate, decimal basePrice, BookGenre bookGenre, int eddition)
+
+        public bool AddBook(Book bookToAdd)
         {
-            var book = new Book(autoherName, title, quantity, publicationDate, basePrice, bookGenre, eddition);
-            Products.Add(book);
+            // details validation
+            if (IsProductExists(bookToAdd.Title))
+            {
+                UpdateQuantityForExistingProduct(bookToAdd.Title, bookToAdd.Quantity);
+            }
+            else
+            {
+                Products.Add(bookToAdd);
+            }
+
+            return true;
         }
-        public void AddJournal(string editorName, string name, int issueNumber, int quantuty, DateTime publicationDate,
-            decimal basePrice, JournalFrequency frequency, JournalGenre genres)
+
+        public bool AddJournal(Journal journalToAdd)
         {
-            var journal = new Journal(editorName, name, issueNumber, quantuty, publicationDate, basePrice, frequency, genres);
-            Products.Add(journal);
+            // details validation
+            if (IsProductExists(journalToAdd.Name))
+            {
+                UpdateQuantityForExistingProduct(journalToAdd.Name, journalToAdd.Quantity);
+            }
+
+            else
+            {
+                Products.Add(journalToAdd);
+            }
+
+             return true;
+        }
+
+        
+
+        private void UpdateQuantityForExistingProduct(string title, int quantity)
+        {
+            var productInStock  = Products.Get(title);
+            var UpdatedQuantity = productInStock.Quantity + quantity;
+            Products.Update(productInStock, UpdatedQuantity);
+        }
+
+        private bool IsProductExists(string title)
+        {
+            if (Products.Get(title) == null) return false;
+            else return true;
         }
     }
 }

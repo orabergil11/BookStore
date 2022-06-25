@@ -11,7 +11,7 @@
     <Grid>
         <ComboBox Width="200"
                   Height="100"
-                  ItemsSource="{Binding ItemsToAdd}"
+                  ItemsSource="{Binding ProductsTypesToAdd}"
                   SelectedItem="{Binding SelectedProduct ,Mode=TwoWay}">
 
         </ComboBox>

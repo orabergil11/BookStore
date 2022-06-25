@@ -11,6 +11,7 @@
         ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True"
+        
         >
     
     <Border Background="#272537"

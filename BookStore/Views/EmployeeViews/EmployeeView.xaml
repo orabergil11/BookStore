@@ -15,8 +15,12 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-            <Button Content="Add Product" Command="{Binding AddBookMenu}">
-            </Button>
+        <Button Content="Add Products" Command="{Binding ChooseProductsMenu}">
+        </Button>
+
+        <Button  Grid.Row="1" Content="Remove Products" Command="{Binding RemoveProductsMenu}">
+
+        </Button>
 
     </Grid>
 </UserControl>

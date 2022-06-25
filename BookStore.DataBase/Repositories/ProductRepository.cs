@@ -1,8 +1,18 @@
-﻿using BookStore.DataBase.Interfaces;
-using BookStore.Models;
-using System;
+﻿// ------------------------------------------------------------------------------------------------------ //
+//                                                                                                        //
+// @File      ProductRepository.cs                                                                        //
+// @Details   The Layer that links between the data-base and the server                                   //
+// @Author    Or Abergil                                                                                  //
+// @Since     15/03/2022                                                                                  //
+//                                                                                                        //
+// ------------------------------------------------------------------------------------------------------ //
+
 using System.Collections.Generic;
 using System.Linq;
+using System;
+
+using BookStore.DataBase.Interfaces;
+using BookStore.Models;
 
 namespace BookStore.DataBase
 {
@@ -14,22 +24,27 @@ namespace BookStore.DataBase
             Data = new ProductDataContext();
         }
 
+        //CRUD functions
         public void Add(Product product)
         {
             Data._Products.Add(product);
             Data.SaveChanges();
         }
-
-        public bool Delete(Guid id)
+        public Product Get(Guid id)
         {
-            var prodToRemove = Data._Products.FirstOrDefault(s => s.Id == id);
-            if (prodToRemove.Id != Guid.Empty)
-            {
-                Data._Products.Remove(prodToRemove);
-                Data.SaveChanges();
-                return true;
-            }
-            return false;
+            var selectedProduct = Data._Products.FirstOrDefault(product => product.Id == id);
+            return selectedProduct;
+        }
+
+        public Product Get(string title)
+        {
+            var selectedProduct = Data._Products.FirstOrDefault((product => product.Description == title));
+            return selectedProduct;
+        }
+
+        public IEnumerable<Product> GetAll()
+        {
+            return Data._Products.ToList();
         }
 
         public void Update(Product item, int numOfBooks)
@@ -45,16 +60,19 @@ namespace BookStore.DataBase
             }
         }
 
-        public IEnumerable<Product> GetAll()
+        public bool Delete(Guid id)
         {
-            return Data._Products.ToList();
-        }
+            var prodToRemove = Data._Products.FirstOrDefault(s => s.Id == id);
 
-        public Product Get(Guid id)
-        {
-            var selectedProduct = Data._Products.Where(product => product.Id == id);
+            if ((prodToRemove    == null) ||
+                (prodToRemove.Id == Guid.Empty))
+            {
+                 return false;
+            }
 
-            return (Product)selectedProduct;
+            Data._Products.Remove(prodToRemove);
+            Data.SaveChanges();
+            return true;
         }
     }
 }

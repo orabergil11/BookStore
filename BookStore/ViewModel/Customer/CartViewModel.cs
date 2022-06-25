@@ -1,12 +1,21 @@
-﻿using BookStore.Models;
-using BookStore.Server;
-using BookStore.Views;
-using BookStore.Views.CustomerViews;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using System;
+﻿// ----------------------------------------------------------------------- //
+//                                                                         //
+// @File      CartViewModel.cs                                             //
+// @Details   Responsible on the cart's UI in the client side              //
+// @Author    Or Abergil                                                   //
+// @Since     15/03/2022                                                   //
+//                                                                         //
+// ----------------------------------------------------------------------- //
+
 using System.Collections.ObjectModel;
 using System.Windows.Controls;
+
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight;
+
+using BookStore.Views.CustomerViews;
+using BookStore.Models;
+using BookStore.Server;
 
 namespace BookStore.ViewModel.CustomerVM
 {
@@ -17,10 +26,20 @@ namespace BookStore.ViewModel.CustomerVM
         private double selectedProductPrice;
         private int selectedProductQuantity;
         private double totalCartValue;
-        public RelayCommand BuyProductCommand { get; set; }
+
+        public RelayCommand BuyProduct_Command { get; set; }
         public double SelectedProductPrice { get => selectedProductPrice; set => Set(ref selectedProductPrice, value); }
         public int SelectedProductQuantity { get => selectedProductQuantity; set => Set(ref selectedProductQuantity, value); }
         public double TotalCartValue { get => totalCartValue; set => Set(ref totalCartValue, value); }
+
+        public CartViewModel()
+        {
+            currentProductsInCart = new ObservableCollection<Product>(ShoppingCart.Instance.ProductsInCart);
+            BuyProduct_Command = new RelayCommand(BuyProduct);
+
+            MessengerInstance.Register<bool>(this, "RefreshCartView", RefreshCartDisplay);
+            MessengerInstance.Register<bool>(this, "resetCart", resetCart);
+        }
 
         public ObservableCollection<Product> CurrentProductsInCart
         {
@@ -32,6 +51,7 @@ namespace BookStore.ViewModel.CustomerVM
                 Set(ref currentProductsInCart, value);
             }
         }
+
         public Product SelectedProduct
         {
             get => selectedProduct; set
@@ -41,23 +61,17 @@ namespace BookStore.ViewModel.CustomerVM
             }
         }
 
-        public CartViewModel()
-        {
-            currentProductsInCart = new ObservableCollection<Product>(ShoppingCart.Instance.ProductsInCart);
-            BuyProductCommand = new RelayCommand(BuyProduct);
-            MessengerInstance.Register<bool>(this,"cart", InitCart);
-            MessengerInstance.Register<bool>(this, "resetCart", resetCart);
-        }
-
         private void resetCart(bool obj)
         {
             CurrentProductsInCart.Clear();
             ShoppingCart.Instance.ProductsInCart.Clear();
-            SelectedProductPrice = 0;
+
+            SelectedProductPrice    = 0;
             SelectedProductQuantity = 0;
-            TotalCartValue = 0;
+            TotalCartValue          = 0;
         }
-        private void InitCart(bool obj)
+
+        private void RefreshCartDisplay(bool obj)
         {
             CurrentProductsInCart = new ObservableCollection<Product>(ShoppingCart.Instance.ProductsInCart);
             UpdateProductDetails();
@@ -66,7 +80,7 @@ namespace BookStore.ViewModel.CustomerVM
         private void UpdateProductDetails()
         {
             if (SelectedProduct == null) return;
-            SelectedProductPrice = SelectedProduct.GetTotalPrice();
+            SelectedProductPrice    = SelectedProduct.GetTotalPrice();
             SelectedProductQuantity = SelectedProduct.Quantity;
         }
 
@@ -74,6 +88,7 @@ namespace BookStore.ViewModel.CustomerVM
         {
             if (currentProductsInCart.Count == 0) return;
             ProductService.Instance.BuyProduct();
+
             MessengerInstance.Send<bool>(true,"resetCart");
             MessengerInstance.Send<UserControl>(new ThankYouView());
         }

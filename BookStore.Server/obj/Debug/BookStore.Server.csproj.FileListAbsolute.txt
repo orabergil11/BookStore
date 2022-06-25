@@ -34,21 +34,3 @@ C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFi
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.dll
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.pdb
 C:\Users\97252\Desktop\פיתוח תוכנה\פרויקטים\BSDEMO\BookStoreFinal\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.dll.config
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Server.dll.config
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Server.dll
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Server.pdb
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.dll
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Models.dll
-C:\Projects\BookStore\BookStore.Server\bin\Debug\EntityFramework.dll
-C:\Projects\BookStore\BookStore.Server\bin\Debug\EntityFramework.SqlServer.dll
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.pdb
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.DataBase.dll.config
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Models.pdb
-C:\Projects\BookStore\BookStore.Server\bin\Debug\BookStore.Models.dll.config
-C:\Projects\BookStore\BookStore.Server\bin\Debug\EntityFramework.xml
-C:\Projects\BookStore\BookStore.Server\bin\Debug\EntityFramework.SqlServer.xml
-C:\Projects\BookStore\BookStore.Server\obj\Debug\BookStore.Server.csproj.AssemblyReference.cache
-C:\Projects\BookStore\BookStore.Server\obj\Debug\BookStore.Server.csproj.CoreCompileInputs.cache
-C:\Projects\BookStore\BookStore.Server\obj\Debug\BookStore.Server.csproj.CopyComplete
-C:\Projects\BookStore\BookStore.Server\obj\Debug\BookStore.Server.dll
-C:\Projects\BookStore\BookStore.Server\obj\Debug\BookStore.Server.pdb

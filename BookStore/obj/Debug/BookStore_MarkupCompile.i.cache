@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Projects\BookStore\BookStore\App.xaml
-111917068906
+121932534259
 
-23542813359
+26-2120454502
 128-301153296
-MainWindow.xaml;Theme\MenuButtonTheme.xaml;Views\CartView.xaml;Views\CustomerViews\ThankYouView.xaml;Views\EmployeeViews\AddBookView.xaml;Views\EmployeeViews\AddJournalView.xaml;Views\EmployeeViews\EmployeeLoginView.xaml;Views\EmployeeViews\EmployeeView.xaml;Views\HomeView.xaml;Views\CustomerViews\ProductMenuView.xaml;Views\EmployeeViews\ReplenishmentView.xaml;
+MainWindow.xaml;Theme\MenuButtonTheme.xaml;Views\CustomerViews\CartView.xaml;Views\CustomerViews\ThankYouView.xaml;Views\EmployeeViews\AddBookView.xaml;Views\EmployeeViews\AddedSuccessfully.xaml;Views\EmployeeViews\AddJournalView.xaml;Views\EmployeeViews\EmployeeView.xaml;Views\EmployeeViews\RemoveProductsView.xaml;Views\HomeViews\HomeView.xaml;Views\CustomerViews\ProductMenuView.xaml;Views\EmployeeViews\ReplenishmentView.xaml;
 
 True
 
