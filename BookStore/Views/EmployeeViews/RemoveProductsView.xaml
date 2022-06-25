@@ -52,13 +52,13 @@
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-        
-        
-        <Button  Height="50" Width="100" Grid.Column="1"  VerticalAlignment="Bottom" Grid.Row="2" Content="Remove Product" Command="{Binding RemoveCommand}"></Button>
+
+
+        <Button  Height="50" Width="100" Grid.Column="1"  VerticalAlignment="Bottom" Grid.Row="2" Content="Remove Product" Command="{Binding Remove_Command}"></Button>
 
         <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" >
-        <TextBlock    Text="Product Successfully Removed!" Foreground="LightGreen" FontWeight="Bold"  Visibility="{Binding SuccesfullyRemovedNotefication}" />
-        <TextBlock  Text="Failed To Remove!" Foreground="Red" FontWeight="Bold"  Visibility="{Binding FailedToRemoveNotefication}" />
+        <TextBlock  Text="Product Successfully Removed!" Foreground="LightGreen" FontWeight="Bold"  Visibility="{Binding SuccesfullyRemoved_Notification}" />
+        <TextBlock  Text="Failed To Remove!" Foreground="Red" FontWeight="Bold"  Visibility="{Binding FailedToRemove_Notification}" />
             
         </StackPanel>
         

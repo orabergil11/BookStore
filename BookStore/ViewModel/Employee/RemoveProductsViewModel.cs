@@ -1,37 +1,54 @@
-﻿using BookStore.Models;
-using BookStore.Server;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
-using System;
+﻿// ----------------------------------------------------------------------------------------------------- //
+//                                                                                                       //
+// @File      RemoveProductsViewModel.cs                                                                 //
+// @Details   Responsible on removing products from stock                                                //
+// @Author    Or Abergil                                                                                 //
+// @Since     15/03/2022                                                                                 //
+//                                                                                                       //
+// ----------------------------------------------------------------------------------------------------- //
+
 using System.Collections.ObjectModel;
-using System.Windows;
 using System.Windows.Threading;
+using System.Windows;
+using System;
+
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight;
+
+using BookStore.Models;
+using BookStore.Server;
 
 namespace BookStore.ViewModel.Employee
 {
     public class RemoveProductsViewModel : ViewModelBase
     {
-        private Product selectedProduct;
+        // Fields
+        private ObservableCollection<Product> productList;
+        private Visibility succesfullyRemoved_Notification;
+        private Visibility failedToRemove_Notification;
         private DispatcherTimer dispatcherTimer;
+        private Product selectedProduct;
+
+        // Notifications
+        public Visibility SuccesfullyRemoved_Notification { get => succesfullyRemoved_Notification; set => Set(ref succesfullyRemoved_Notification, value); }
+        public Visibility FailedToRemove_Notification     { get => failedToRemove_Notification;     set => Set(ref failedToRemove_Notification, value); }
+        public Product SelectedProduct                    { get => selectedProduct;                 set => Set(ref selectedProduct, value); }
+        public ObservableCollection<Product> ProductList  { get => productList;                     set => Set(ref productList, value); }
+
+        // Commands
+        public RelayCommand Remove_Command { get; set; }
+
+        // Flags
         private bool isSuccussfullyRemoved;
-        private Visibility succesfullyRemovedNotefication;
-        private Visibility failedToRemoveNotefication;
-
-        public RelayCommand RemoveCommand { get; set; }
-        public Product SelectedProduct { get => selectedProduct; set => Set(ref selectedProduct, value); }
-        public ObservableCollection<Product> ProductList { get; set; }
-
-        public Visibility SuccesfullyRemovedNotefication { get => succesfullyRemovedNotefication; set => Set(ref succesfullyRemovedNotefication, value); }
-        public Visibility FailedToRemoveNotefication { get => failedToRemoveNotefication; set => Set(ref failedToRemoveNotefication, value); }
 
         public RemoveProductsViewModel()
         {
-            RemoveCommand = new RelayCommand(RemoveProduct);
-            this.ProductList = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
-            dispatcherTimer = new DispatcherTimer();
-            SuccesfullyRemovedNotefication = Visibility.Collapsed;
-            FailedToRemoveNotefication = Visibility.Collapsed;
-            MessengerInstance.Register<bool>(this, "RefreshEmployeeView", RefreshProductsDisplay);
+            this.ProductList                     = new ObservableCollection<Product>(ProductService.Instance.Products.GetAll());
+            this.Remove_Command                  = new RelayCommand(RemoveProduct);
+            this.dispatcherTimer                 = new DispatcherTimer();
+            this.SuccesfullyRemoved_Notification = Visibility.Collapsed;
+            this.FailedToRemove_Notification     = Visibility.Collapsed;
+            this.MessengerInstance.Register<bool>(this, "RefreshEmployeeView", RefreshProductsDisplay);
         }
 
         private void RefreshProductsDisplay(bool obj)
@@ -41,42 +58,56 @@ namespace BookStore.ViewModel.Employee
 
         private void RemoveProduct()
         {
-            if (SelectedProduct == null) return;
+            if (SelectedProduct == null)
+            {
+                ShowRelevantNotification(isSuccussfullyRemoved);
+                return;
+            }
+
             isSuccussfullyRemoved = ProductService.Instance.Products.Delete(SelectedProduct.Id);
-            ProductList.Remove(SelectedProduct);
-            ShowRelevantNotefication(isSuccussfullyRemoved);
+
+            if (isSuccussfullyRemoved)
+            {
+                ProductList.Remove(SelectedProduct);
+            }
+            
+            ShowRelevantNotification(isSuccussfullyRemoved);
         }
 
         private void InitTimer()
         {
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 3);
+            dispatcherTimer.Tick    += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(Consts.NOTIFICATION_TIME_HOUR,
+                                                    Consts.NOTIFICATION_TIME_MIN,
+                                                    Consts.NOTIFICATION_TIME_SEC);
             dispatcherTimer.Start();
         }
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
-           if (isSuccussfullyRemoved)
+            var notification = FailedToRemove_Notification;
+
+            if (isSuccussfullyRemoved)
             {
-                SuccesfullyRemovedNotefication = Visibility.Collapsed;
+                notification = SuccesfullyRemoved_Notification;
             }
-            else
-            {
-                FailedToRemoveNotefication = Visibility.Collapsed;
-            }
+
+            notification = Visibility.Collapsed;
         }
-        private void ShowRelevantNotefication(bool productSuccessfullyRemoved)
+
+        private void ShowRelevantNotification(bool productSuccessfullyRemoved)
         {
             if (productSuccessfullyRemoved)
             {
-                SuccesfullyRemovedNotefication = Visibility.Visible;
-                InitTimer();
+                SuccesfullyRemoved_Notification = Visibility.Visible;
             }
+
             else
             {
-                FailedToRemoveNotefication = Visibility.Visible;
-                InitTimer();
+                FailedToRemove_Notification = Visibility.Visible;
             }
+
+            InitTimer();
         }
     }
 }

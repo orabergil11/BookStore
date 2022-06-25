@@ -24,7 +24,7 @@ namespace BookStore.ViewModel
 {
     public class ProductMenuViewModel : ViewModelBase
     {
-        // fields of the selected product
+        // Fields of the selected product
         private string   authorOrEditor;
         private string   description;
         private decimal  price;
@@ -36,7 +36,7 @@ namespace BookStore.ViewModel
         private Enum         selectedGenre;
         private DateTime     publicationDate;
 
-        // views
+        // Views
         private Visibility bookVisibility;
         private Visibility journalVisibility;
 
@@ -51,13 +51,8 @@ namespace BookStore.ViewModel
         private ObservableCollection<ProductTypes> productsType;
         private ObservableCollection<Product> showList;
 
-        // flags
+        // Flags
         private bool isProductAdded;
-
-        // consts
-        public const int NOTIFICATION_TIME_HOUR = 0;
-        public const int NOTIFICATION_TIME_MIN  = 0;
-        public const int NOTIFICATION_TIME_SEC  = 3;
 
         #region ObservableCollections
         public ObservableCollection<Product> ProductDb          { get => productDb;     set => Set(ref productDb,    value); }
@@ -67,17 +62,17 @@ namespace BookStore.ViewModel
         #endregion
 
         #region FullProperties
-        public string Description { get => description; set => Set(ref description, value); }
-        public decimal Price { get => price; set => Set(ref price, value); }
-        public string AuthorOrEditor { get => authorOrEditor; set => Set(ref authorOrEditor, value); }
-        public int EditionOrIssueNumber { get => editionOrIssueNumber; set => Set(ref editionOrIssueNumber, value); }
-        public int TotalQuantityInStock { get => totalQuantityInStock; set => Set(ref totalQuantityInStock, value); }
-        public int RequestedProductsToBuy { get => requestedProductsToBuy; set => Set(ref requestedProductsToBuy, value); }
-        public DateTime PublicationDate { get => publicationDate; set => Set(ref publicationDate, value); }
-        public Visibility BookVisibility { get => bookVisibility; set => Set(ref bookVisibility, value); }
-        public Visibility JournalVisibility { get => journalVisibility; set => Set(ref journalVisibility, value); }
-        public Visibility AddedToCart_Notification { get => addedToCart_Notification; set => Set(ref addedToCart_Notification, value); }
-        public Visibility NotAddedToCart_Notification { get => notAddedToCart_Notification; set => Set(ref notAddedToCart_Notification, value); }
+        public string Description                        { get => description;                 set => Set(ref description, value); }
+        public decimal Price                             { get => price;                       set => Set(ref price, value); }
+        public string AuthorOrEditor                     { get => authorOrEditor;              set => Set(ref authorOrEditor, value); }
+        public int EditionOrIssueNumber                  { get => editionOrIssueNumber;        set => Set(ref editionOrIssueNumber, value); }
+        public int TotalQuantityInStock                  { get => totalQuantityInStock;        set => Set(ref totalQuantityInStock, value); }
+        public int RequestedProductsToBuy                { get => requestedProductsToBuy;      set => Set(ref requestedProductsToBuy, value); }
+        public DateTime PublicationDate                  { get => publicationDate;             set => Set(ref publicationDate, value); }
+        public Visibility BookVisibility                 { get => bookVisibility;              set => Set(ref bookVisibility, value); }
+        public Visibility JournalVisibility              { get => journalVisibility;           set => Set(ref journalVisibility, value); }
+        public Visibility AddedToCart_Notification       { get => addedToCart_Notification;    set => Set(ref addedToCart_Notification, value); }
+        public Visibility NotAddedToCart_Notification    { get => notAddedToCart_Notification; set => Set(ref notAddedToCart_Notification, value); }
         public RelayCommand CartCommand { get; set; }
 
         public ProductTypes SelectedType
@@ -154,9 +149,9 @@ namespace BookStore.ViewModel
         {
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
 
-            dispatcherTimer.Interval = new TimeSpan(NOTIFICATION_TIME_HOUR,
-                                                    NOTIFICATION_TIME_MIN,
-                                                    NOTIFICATION_TIME_SEC);
+            dispatcherTimer.Interval = new TimeSpan(Consts.NOTIFICATION_TIME_HOUR,
+                                                    Consts.NOTIFICATION_TIME_MIN,
+                                                    Consts.NOTIFICATION_TIME_SEC);
             dispatcherTimer.Start();
         }
 

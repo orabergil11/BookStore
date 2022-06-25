@@ -1,6 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// ------------------------------------------------------------------------------------------------------ //
+//                                                                                                        //
+// @File      JournalFrequency.cs                                                                         //
+// @Details   Shows the different journal frequencies a journal contains                                  //
+// @Author    Or Abergil                                                                                  //
+// @Since     15/03/2022                                                                                  //
+//                                                                                                        //
+// ------------------------------------------------------------------------------------------------------ //
 
 namespace BookStore.Models.Enums
 {

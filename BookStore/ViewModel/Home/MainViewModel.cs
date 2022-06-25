@@ -1,7 +1,17 @@
-using BookStore.Views;
-using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
+// ------------------------------------------------------------------------------------------------------ //
+//                                                                                                        //
+// @File      MainViewModel.cs                                                                            //
+// @Details   the layout that contains different navigaitions buttons                                     //
+// @Author    Or Abergil                                                                                  //
+// @Since     15/03/2022                                                                                  //
+//                                                                                                        //
+// ------------------------------------------------------------------------------------------------------ //
+
 using System.Windows.Controls;
+using BookStore.Views;
+
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight;
 
 namespace BookStore.ViewModel
 {
@@ -16,19 +26,19 @@ namespace BookStore.ViewModel
 
         public MainViewModel()
         {
-            MyUserControl = new HomeView(); // Set the first screen to 'Homepage'.
-            MessengerInstance.Register<UserControl>(this, UpdateUserControl);
+            MyUserControl   = new HomeView(); // Set the first screen to 'Homepage'.
             EmployeeCommand = new RelayCommand(GoToEmployeePage);
             CustomerCommand = new RelayCommand(GoToCustomerPage);
-            HomeCommand = new RelayCommand(GoToHomePage);
-            CartCommand = new RelayCommand(GoToCartPage);
+            HomeCommand     = new RelayCommand(GoToHomePage);
+            CartCommand     = new RelayCommand(GoToCartPage);
+            MessengerInstance.Register<UserControl>(this, UpdateUserControl);
         }
-        private void UpdateUserControl(UserControl userControl) => MyUserControl = userControl;
         private void GoToCartPage()
         {
             MessengerInstance.Send<UserControl>(new CartView());
             MessengerInstance.Send<bool>(true,"RefreshCartView");
         }
+
         private void GoToCustomerPage()
         {
             MessengerInstance.Send<UserControl>(new ProductMenuView());
@@ -41,6 +51,14 @@ namespace BookStore.ViewModel
             MessengerInstance.Send<bool>(true, "RefreshEmployeeView");
         }
 
-        private void GoToHomePage() => MessengerInstance.Send<UserControl>(new HomeView());
+        private void UpdateUserControl(UserControl userControl)
+        {
+            MyUserControl = userControl;
+        }
+
+        private void GoToHomePage()
+        {
+            MessengerInstance.Send<UserControl>(new HomeView());
+        }
     }
 }
